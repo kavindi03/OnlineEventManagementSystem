@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+     <servlet>
+     	<servlet-name>TransportInsertServlet </servlet-name>
+     	<servlet-class>TransportPackage.TransportInsertServlet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>TransportInsertServlet</servlet-name>
+     	<url-pattern>/TransportInsertServlet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>TransportGetAllServelet </servlet-name>
+     	<servlet-class>TransportPackage.TransportGetAllServelet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>TransportGetAllServelet</servlet-name>
+     	<url-pattern>/TransportGetAllServelet</url-pattern>
+     </servlet-mapping>
+     
+      <servlet>
+     	<servlet-name>TransportUpdateServelet </servlet-name>
+     	<servlet-class>TransportPackage.TransportUpdateServelet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>TransportUpdateServelet</servlet-name>
+     	<url-pattern>/TransportUpdateServelet</url-pattern>
+     </servlet-mapping>
+     
+     <servlet>
+     	<servlet-name>TransportDeleteServelet </servlet-name>
+     	<servlet-class>TransportPackage.TransportDeleteServelet</servlet-class>
+     </servlet>
+     
+     <servlet-mapping>
+     	<servlet-name>TransportDeleteServelet</servlet-name>
+     	<url-pattern>/TransportDeleteServelet</url-pattern>
+     </servlet-mapping>
+
+
+</web-app>
